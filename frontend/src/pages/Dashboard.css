@@ -1,0 +1,287 @@
+/* ============================= */
+/* DASHBOARD PAGE */
+/* ============================= */
+.dashboard {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+.dashboard-header {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.dashboard-header h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.logout-btn {
+  padding: 8px 18px;
+  background: #ff4d4f;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #e43d3f;
+  transform: scale(1.05);
+}
+
+/* ============================= */
+/* ADD CUSTOMER BUTTON */
+/* ============================= */
+.add-btn {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(24, 90, 157, 0.4);
+}
+
+/* ============================= */
+/* CUSTOMER GRID */
+/* ============================= */
+.customer-list {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ============================= */
+/* CUSTOMER CARD */
+/* ============================= */
+.customer-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.customer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.customer-card span {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* CONTACT BUTTONS */
+/* ============================= */
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Email Button */
+.email-btn {
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+  color: white;
+}
+
+.email-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(47, 128, 237, 0.4);
+}
+
+/* Phone Button */
+.phone-btn {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: white;
+}
+
+.phone-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(56, 239, 125, 0.4);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* PAGE */
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a7bd1, #8e54e9);
+  padding: 30px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.dashboard-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+}
+
+/* LOGOUT */
+.logout-btn {
+  background: #ff4d4f;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #e43c3e;
+  transform: scale(1.05);
+}
+
+/* FORM SECTION */
+.form-section {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* EMPTY STATE */
+.empty-state {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  font-size: 18px;
+}
+
+/* CUSTOMER GRID */
+.customer-list {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CUSTOMER CARD */
+.customer-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.customer-card:hover {
+  transform: translateY(-6px);
+}
+
+.customer-card h3 {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* CONTACT BUTTONS */
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.contact {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+}
+
+.contact.email {
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+}
+
+.contact.phone {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+/* ACTION BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  flex: 1;
+  background: #6a7bd1;
+  border: none;
+  padding: 8px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  flex: 1;
+  background: #ff4d4f;
+  border: none;
+  padding: 8
